@@ -50,8 +50,6 @@ select:-webkit-autofill:focus {
 
 .btn {
   position: relative;
-  width: 132px;
-  height: 43px;
 }
 
 .btn a {
@@ -96,7 +94,7 @@ select:-webkit-autofill:focus {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -5px;
+  bottom: 0px;
   width: 30px;
   height: 10px;
   background: #aa80ff;

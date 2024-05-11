@@ -38,6 +38,9 @@ const Form = () => {
         label={"Message"}
         placeholder={"Hey i have some issues activating my account..."}
       />
+      <div class="btn w-full h-[2.75rem]">
+        <a href="#">Send Message</a>
+      </div>
     </form>
   );
 };
