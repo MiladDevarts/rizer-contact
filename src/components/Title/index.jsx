@@ -85,7 +85,7 @@ const Title = () => {
           <a>Join us</a>
         </div>
       </div>
-      <h1 className="flex items-center gap-3 text-white text-[48px]">
+      <h1 className="flex items-center gap-3 text-white text-[48px] font-plus-jakarta">
         Lets Have a Chat
         <svg
           width="29"
