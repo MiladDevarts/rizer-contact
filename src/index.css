@@ -7,8 +7,28 @@ body {
 }
 
 main {
+  .input-group label,
+  .textarea-group label {
+    @apply text-sm text-white;
+  }
+
+  .input-group input {
+    @apply w-full h-[2.5rem] px-[1rem] py-[0.62rem] rounded-[6px] text-white bg-[#DBC8FF]/5 backdrop-blur-md placeholder:text-[#767083] border border-[#DBC8FF]/5 focus:border-[#DBC8FF]/20 focus:outline-none;
+  }
   @apply bg-cover bg-no-repeat bg-center bg-[#050407];
   background-image: url("../public/bg.jpg");
+}
+
+.menu {
+  @apply flex items-center px-[1.5rem] py-[0.4rem] bg-[#DBC8FF]/5 backdrop-blur-md  rounded-full border border-[#AA80FF]/10;
+}
+
+.menu a {
+  @apply inline-block px-[1rem] py-[0.5rem] text-[#7B7488] hover:text-white transition-colors ease-linear;
+}
+
+.menu a.active {
+  @apply text-white bg-[#D7C2FF]/10 border border-[#DBC8FF]/5 rounded-[6px];
 }
 
 .info-box {
@@ -33,15 +53,6 @@ select:-webkit-autofill:focus {
 .input-group,
 .textarea-group {
   @apply w-full flex flex-col gap-[12px];
-}
-
-.input-group label,
-.textarea-group label {
-  @apply text-sm text-white;
-}
-
-.input-group input {
-  @apply w-full h-[2.5rem] px-[1rem] py-[0.62rem] rounded-[6px] text-white bg-[#DBC8FF]/5 backdrop-blur-md placeholder:text-[#767083] border border-[#DBC8FF]/5 focus:border-[#DBC8FF]/20 focus:outline-none;
 }
 
 .textarea-group textarea {
