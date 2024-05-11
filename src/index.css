@@ -11,6 +11,10 @@ main {
   background-image: url("../public/bg.jpg");
 }
 
+.info-box {
+  @apply flex items-center h-[2.2rem] px-[6px] py-[8px] gap-4 text-white text-[14px] bg-[#AA80FF]/5 backdrop-blur-lg rounded-full border  border-[#AA80FF]/5;
+}
+
 .btn {
   position: relative;
   width: 132px;
