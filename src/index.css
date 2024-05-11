@@ -29,7 +29,7 @@ main {
 }
 
 .menu a.active {
-  @apply bg-[#D7C2FF]/10 border border-[#DBC8FF]/5 rounded-[6px];
+  @apply bg-[#D7C2FF]/10 border border-[#DBC8FF]/5 rounded-[6px] text-white;
 }
 
 .info-box {
