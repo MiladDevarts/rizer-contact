@@ -23,11 +23,11 @@ main {
 }
 
 .menu {
-  @apply flex items-center px-[1.5rem] py-[0.4rem] bg-[#DBC8FF]/5 backdrop-blur-md  rounded-full border border-[#AA80FF]/10;
+  @apply flex items-center text-[14px] px-[0.6rem] py-[0.3rem] bg-[#DBC8FF]/5 backdrop-blur-md  rounded-full border border-[#AA80FF]/10;
 }
 
 .menu a {
-  @apply inline-block px-[1rem] py-[0.5rem] text-[#7B7488] hover:text-white transition-colors ease-linear;
+  @apply inline-block px-[1.1rem] py-[0.3rem] text-[#7B7488] hover:text-white transition-colors ease-linear;
 }
 
 .menu a.active {

@@ -2,7 +2,7 @@ import React from "react";
 
 const Title = () => {
   return (
-    <section className="flex flex-col gap-3 justify-center items-center my-6">
+    <section className="flex flex-col gap-3 justify-center items-center my-8">
       <div className="info-box">
         <div className="flex gap-2 items-center">
           <div className="flex justify-center items-center w-[1.7rem] h-[1.7rem] rounded-full bg-[#AA80FF]/10">

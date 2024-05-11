@@ -19,7 +19,7 @@ const Navigation = () => {
         </div>
       </div>
       <div className="w-[20%] flex justify-end">
-        <div className="flex items-center gap-4 text-[#7B7488] ">
+        <div className="flex items-center gap-6 text-[#7B7488] ">
           <a href="#">Login</a>
           <div class="btn w-[8.25rem] h-[2.68rem]">
             <a href="#">Get Started</a>
