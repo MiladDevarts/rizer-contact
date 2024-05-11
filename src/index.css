@@ -15,6 +15,18 @@ main {
   @apply flex items-center h-[2.2rem] px-[6px] py-[8px] gap-4 text-white text-[14px] bg-[#AA80FF]/5 backdrop-blur-lg rounded-full border  border-[#AA80FF]/5;
 }
 
+.input-group {
+  @apply w-full flex flex-col gap-[12px];
+}
+
+.input-group label {
+  @apply text-sm text-white;
+}
+
+.input-group input {
+  @apply w-full h-[2.5rem] px-[1rem] py-[0.62rem] rounded-[6px] text-white bg-[#DBC8FF]/5 backdrop-blur-md placeholder:text-[#767083] border border-[#DBC8FF]/5 focus:border-[#DBC8FF]/20 focus:outline-none;
+}
+
 .btn {
   position: relative;
   width: 132px;

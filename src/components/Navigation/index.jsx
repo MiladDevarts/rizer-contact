@@ -3,7 +3,7 @@ import RizerLogo from "../../assets/logo/rizer-white.svg";
 
 const Navigation = () => {
   return (
-    <nav className="flex justify-between items-center max-w-[75rem] mx-auto py-[1.87rem]">
+    <nav className="w-full flex justify-between items-center max-w-[75rem] mx-auto py-[1.87rem]">
       <div className="w-[20%]">
         <a href="/" className="cursor-pointer">
           <img src={RizerLogo} alt="" />
