@@ -3,7 +3,7 @@ import Navigation from "./components/Navigation";
 function App() {
   return (
     <>
-      <main>
+      <main className="w-full h-[100vh]">
         <Navigation />
       </main>
     </>

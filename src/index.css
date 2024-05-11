@@ -5,3 +5,88 @@
 body {
   @apply bg-[#050407];
 }
+
+main {
+  @apply bg-cover bg-no-repeat bg-center bg-[#050407];
+  background-image: url("../public/bg.jpg");
+}
+
+.btn {
+  position: relative;
+  width: 132px;
+  height: 43px;
+}
+
+.btn a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 0 1px rgba(186, 215, 247, 0.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #fff;
+  z-index: 1;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.8s;
+  backdrop-filter: blur(15px);
+}
+
+.btn a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+  transition: 0.8s;
+}
+
+.btn:hover a::before {
+  width: 100%;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width: 30px;
+  height: 10px;
+  background: #aa80ff;
+  border-radius: 10px;
+  transition: 0.8s;
+  transition-delay: 0s;
+}
+
+.btn:hover::before {
+  bottom: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::after {
+  top: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+}
+
+.btn:nth-child(1)::before,
+.btn:nth-child(1)::after {
+  background: #aa80ff;
+  box-shadow: 0 0 5px #aa80ff, 0 0 15px #aa80ff, 0 0 30px #aa80ff,
+    0 0 60px #aa80ff;
+}
