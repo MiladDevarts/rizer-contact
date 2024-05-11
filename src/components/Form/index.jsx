@@ -1,5 +1,6 @@
 import React from "react";
 import Input from "../Input";
+import Textarea from "../Textarea";
 
 const Form = () => {
   return (
@@ -32,6 +33,11 @@ const Form = () => {
           label={"Phone number"}
         />
       </div>
+      <Textarea
+        id={"message"}
+        label={"Message"}
+        placeholder={"Hey i have some issues activating my account..."}
+      />
     </form>
   );
 };
