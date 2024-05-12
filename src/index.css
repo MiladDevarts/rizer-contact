@@ -38,6 +38,10 @@ main {
   @apply flex items-center h-[2.2rem] px-[6px] py-[8px] gap-4 text-white text-[14px] bg-[#AA80FF]/5 backdrop-blur-lg rounded-full border  border-[#AA80FF]/5;
 }
 
+.loading {
+  @apply absolute top-0 left-0 w-screen h-screen overflow-hidden flex justify-center items-center bg-black/40 backdrop-blur-lg z-10;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -64,6 +68,7 @@ select:-webkit-autofill:focus {
 
 .btn {
   position: relative;
+  cursor: pointer;
 }
 
 .btn a {

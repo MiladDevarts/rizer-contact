@@ -1,10 +1,16 @@
 import React from "react";
 
-const Input = ({ id, type = "text", label, placeholder }) => {
+const Input = ({ id, type = "text", label, placeholder, onfocus }) => {
   return (
     <div className="w-full input-group">
       <label htmlFor={id}>{label}</label>
-      <input className="w-full" type={type} id={id} placeholder={placeholder} />
+      <input
+        onFocus={onfocus}
+        className="w-full"
+        type={type}
+        id={id}
+        placeholder={placeholder}
+      />
     </div>
   );
 };
