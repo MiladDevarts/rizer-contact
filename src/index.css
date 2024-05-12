@@ -9,8 +9,8 @@ body {
 }
 
 main {
-  @apply bg-cover bg-no-repeat bg-center bg-[#050407];
-  background-image: url("../public/bg.jpg");
+  @apply bg-cover bg-no-repeat bg-center ;
+  /* background-image: url("../public/video.mp4"); */
 }
 
 .input-group label,
