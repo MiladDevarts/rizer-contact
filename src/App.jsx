@@ -42,8 +42,27 @@ function App() {
             <Title />
             <Form />
           </main>
+          <section className="w-screen h-screen flex flex-col gap-3 lg:hidden items-center justify-center">
+            <div>
+              <Lottie
+                options={{
+                  loop: false,
+                  autoplay: true,
+                  animationData: animationData,
+                  rendererSettings: {
+                    preserveAspectRatio: "xMidYMid slice",
+                  },
+                }}
+                width={140}
+              />
+            </div>
+            <h1 className="text-white font-plus-jakarta font-semibold">
+              Mobile View
+              <span className="font-light">Not Available!</span>
+            </h1>
+          </section>
           <video
-            className="absolute top-0 w-screen h-screen object-cover -z-[100]"
+            className="hidden lg:block absolute top-0 w-screen h-screen object-cover -z-[100]"
             width="750"
             height="500"
             autoPlay
